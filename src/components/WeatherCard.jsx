@@ -18,7 +18,6 @@ export default function WeatherCard({ weather, mood, weatherBackgrounds }) {
         backgroundSize: "cover",
         imageRendering: "pixelated",
         backgroundPosition: "center",
-        backgroundColor: "#8B5E3C",
         color: "#FAF6F0",
       }}
     >
