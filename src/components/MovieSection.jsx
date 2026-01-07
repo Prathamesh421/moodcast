@@ -1,7 +1,7 @@
 const shuffle = (arr) => [...arr].sort(() => Math.random() - 0.5);
 
 const moviesByMood = {
-  "Cozy 😌": [
+  "Cozy": [
     { name: "About Time", image: "https://image.tmdb.org/t/p/w500/qw3J9cNeLioOLoR68WX7z79aCdK.jpg" },
     { name: "Little Women", image: "https://image.tmdb.org/t/p/w500/yn5ihODtZ7ofn8pDYfxCmxh8AXI.jpg" },
     { name: "Julie & Julia", image: "https://image.tmdb.org/t/p/w500/4HodYYKEIsGOdinkGi2Ucz6X9i0.jpg" },
@@ -12,7 +12,7 @@ const moviesByMood = {
     { name: "Brooklyn", image: "https://image.tmdb.org/t/p/w500/qz1C1oDq7rZ2n7qFzYF4Hj7zQ1x.jpg" },
   ],
 
-  "Energetic ⚡": [
+  "Energetic": [
     { name: "Rocky", image: "https://image.tmdb.org/t/p/w500/8QVDXDiOGHRcAD4oM6MXjE0osSj.jpg" },
     { name: "Whiplash", image: "https://image.tmdb.org/t/p/w500/6uSPcdG8R9L8J4qFQk1f5F4Xx0C.jpg" },
     { name: "Creed", image: "https://image.tmdb.org/t/p/w500/v3QyboWRoA4O9RbcsqH8tJMe8EB.jpg" },
@@ -23,7 +23,7 @@ const moviesByMood = {
     { name: "Mad Max: Fury Road", image: "https://image.tmdb.org/t/p/w500/8tZYtuWezp8JbcsvHYO0O46tFbo.jpg" },
   ],
 
-  "Chill 😎": [
+  "Chill": [
     { name: "The Nice Guys", image: "https://image.tmdb.org/t/p/w500/7C6tZJ4M9RZz8XkJw9jD6Y7J2wO.jpg" },
     { name: "Ocean’s Eleven", image: "https://image.tmdb.org/t/p/w500/o0h76DVXvk5OKjmNez5YY0GODC2.jpg" },
     { name: "The Big Lebowski", image: "https://image.tmdb.org/t/p/w500/9mprbw31MGdd66LR0AQKoDMoFRv.jpg" },
@@ -34,7 +34,7 @@ const moviesByMood = {
     { name: "Lost in Translation", image: "https://image.tmdb.org/t/p/w500/wrDkLkE2H1sG4OQ3K9G1LZzF5pC.jpg" },
   ],
 
-  "Lazy ❄️": [
+  "Lazy": [
     { name: "Harry Potter", image: "https://image.tmdb.org/t/p/w500/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg" },
     { name: "Home Alone", image: "https://image.tmdb.org/t/p/w500/9wSbe4CwObACCQvaUVhWQyLR5Vz.jpg" },
     { name: "Paddington", image: "https://image.tmdb.org/t/p/w500/hcX1l5I0Vtlg4kYp4b6j6Tq8XyG.jpg" },

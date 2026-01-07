@@ -11,29 +11,27 @@ import rain from "./assets/weather/rainy.png";
 import snow from "./assets/weather/snow.png";
 import thunder from "./assets/weather/thunder.png";
 
-const getMoodFromWeather = (condition) => {
-  const text = condition.toLowerCase();
+const getMoodFromWeather = (condition, temp) => {
+  if (condition === "Snow" || condition === "Fog" || temp <= 10) {
+    return "Lazy";
+  }
 
-  if (text.includes("rain") || text.includes("drizzle")) {
-    return "Cozy 😌";
+  if (condition === "Rain") {
+    return "Cozy";
   }
-  if (text.includes("sun") || text.includes("clear")) {
-    return "Energetic ⚡";
+
+  if (condition === "Clear" && temp >= 25) {
+    return "Energetic";
   }
-  if (text.includes("cloud") || text.includes("overcast")) {
-    return "Chill 😎";
-  }
-  if (text.includes("snow")) {
-    return "Lazy ❄️";
-  }
-  return "Balanced 🙂";
+
+  return "Chill";
 };
 
-const weatherBackgrounds = {
-  Clear: clear,
-  Clouds: cloudy,
-  Rain: rain,
-  Snow: snow,
+const moodBackgrounds = {
+  Energetic: clear,
+  Chill: cloudy,
+  Cozy: rain,
+  Lazy : snow,
   Thunderstorm: thunder,
 };
 
@@ -78,7 +76,7 @@ function App() {
         main: { temp },
       });
 
-      setMood(getMoodFromWeather(condition));
+      setMood(getMoodFromWeather(condition, temp));
     } catch (err) {
       console.error("Weather error:", err.message);
     }
@@ -112,7 +110,7 @@ function App() {
         <WeatherCard
           weather={weather}
           mood={mood}
-          weatherBackgrounds={weatherBackgrounds}
+          moodBackgrounds={moodBackgrounds}
         />
         <FoodSection mood={mood} />
         <MovieSection mood={mood}/>
