@@ -98,11 +98,7 @@ function App() {
     >
       {/* App Container */}
       <div
-        className="w-full max-w-6xl rounded-2xl p-10 space-y-12 shadow-lg"
-        style={{
-          backgroundColor: "#CBCBCB",
-          color: "#6D8196",
-        }}
+        className="w-full bg-surface text-text max-w-6xl rounded-2xl p-10 space-y-12 shadow-lg"
       >
         <TopLines />
         <Header />

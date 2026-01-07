@@ -60,23 +60,22 @@ export default function MovieSection({ mood }) {
 
           return (
             <div
-              key={index}
-              className="aspect-[2/3] rounded-xl flex items-end justify-center p-2 text-sm font-medium shadow-md"
-              style={{
-                backgroundColor: movie ? "transparent" : "#E7DFD6",
-                backgroundImage: movie
-                  ? `linear-gradient(
-                      rgba(0,0,0,0.35),
-                      rgba(0,0,0,0.35)
-                    ), url(${movie.image})`
-                  : "none",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                color: "#FEF9E1",
-              }}
-            >
-              {movie ? movie.name : ""}
-            </div>
+  key={index}
+  className="aspect-[2/3] rounded-xl flex items-end justify-center p-2 text-sm font-medium shadow-md bg-surface text-bg"
+  style={{
+    backgroundImage: movie
+      ? `linear-gradient(
+          rgba(0,0,0,0.35),
+          rgba(0,0,0,0.35)
+        ), url(${movie.image})`
+      : "none",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {movie ? movie.name : ""}
+</div>
+
           );
         })}
       </div>

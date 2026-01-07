@@ -1,13 +1,23 @@
+// tailwind.config.js
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
       colors: {
-        bg: "#FAF6F0",
-        surface: "#E7DFD6",
-        text: "#3A3A3A",
-        accent: "#8B5E3C",
-        weather: "#6D7B8D",
+        // Base canvas
+        bg: "#FEFCFD",        // White
+
+        // Card & section surfaces
+        surface: "#BFCDE0",   // Pale Sky
+
+        // Primary readable text
+        text: "#000505",      // Black
+
+        // Accent / CTA / mood pill
+        accent: "#3B3355",    // Space Indigo
+
+        // Secondary / informational text
+        weather: "#5D5D81",   // Dusty Grape
       },
     },
   },
