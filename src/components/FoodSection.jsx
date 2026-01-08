@@ -95,7 +95,7 @@ export default function FoodSection({ mood }) {
           return (
             <div
               key={index}
-              className="h-40 rounded-xl flex items-end justify-center p-2 text-sm font-medium shadow-md bg-surface text-bg"
+              className="h-40 rounded-xl flex items-end justify-center p-2 text-sm font-medium shadow-md bg-box text-bg"
               style={{
                 backgroundImage: food
                   ? `linear-gradient(

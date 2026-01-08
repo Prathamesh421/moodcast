@@ -5,19 +5,21 @@ export default {
     extend: {
       colors: {
         // Base canvas
-        bg: "#FEFCFD",        // White
+        bg: "#FEFCFD", // White
 
         // Card & section surfaces
-        surface: "#BFCDE0",   // Pale Sky
+        surface: "#BFCDE0", // Pale Sky
 
         // Primary readable text
-        text: "#000505",      // Black
+        text: "#000505", // Black
 
         // Accent / CTA / mood pill
-        accent: "#3B3355",    // Space Indigo
+        accent: "#3B3355", // Space Indigo
 
         // Secondary / informational text
-        weather: "#5D5D81",   // Dusty Grape
+        weather: "#5D5D81", // Dusty Grape
+
+        box: "#9fb9d6ff",
       },
     },
   },

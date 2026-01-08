@@ -61,7 +61,7 @@ export default function MovieSection({ mood }) {
           return (
             <div
   key={index}
-  className="aspect-[2/3] rounded-xl flex items-end justify-center p-2 text-sm font-medium shadow-md bg-surface text-bg"
+  className="aspect-[2/3] rounded-xl flex items-end justify-center p-2 text-sm font-medium shadow-md bg-box text-bg"
   style={{
     backgroundImage: movie
       ? `linear-gradient(
